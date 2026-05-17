@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      background-color: hsl( 47, 88%, 63%);
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .grid-container{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      background-color: hsl(0, 0%, 100%);
+      width: 400px;
+      grid-area: 2 / 2 / 4 / 3;
+      border-bottom: 10px solid black;
+      border-right: 10px solid black;
+      border-top: 1px solid black;
+      border-left: 1px solid black;
+      border-radius: 10%;
+      padding: 20px;
+    }
+
+    .items{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      width: 400px;
+      order: 1;
+    }
+
+    .title{
+      font-weight: 900;
+      font-size: 2rem;
+    }
+
+    .learn{
+      background-color: hsl( 47, 88%, 63%);
+      width: 75px;
+      font-weight: 700;
+    }
+
+    .by{
+      font-weight: 800;
+      font-size: 1.5rem;
+    }
+
+    *{
+      margin: 8px;
+    }
+
+    .attribution{
+      grid-area: 4 / 1 / 5 / 5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+   <div class="items"><p class="learn">Learning</p>
+
+     <p class="info">Published 21 Dec 2023</p>
+
+     <p class="title">HTML & CSS foundations</p>
+
+     <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+
+     <p class="by">Greg Hooper
+     <div class="image2"><img src="./assets/images/image-avatar.webp" /></div>
+     </p>
+   </div>
+   <div class="image"><img src="./assets/images/illustration-article.svg" /></div>
+   
+  </div>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Pradyumna P Nadig</a>.
+  </footer>
+</body>
+</html>
